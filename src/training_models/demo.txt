@@ -1,3 +1,0 @@
-/home/dmedina/toxic_project/processed_data/allergen/bepler/coded_dataset.csv
-/home/dmedina/toxic_project/results/allergen/bepler/
-8201

@@ -8,23 +8,11 @@ from sklearn.metrics import (precision_score,
                              matthews_corrcoef,
                              confusion_matrix)
 
-from sklearn.linear_model import (RidgeClassifier, 
-                                  LogisticRegression,
-                                  SGDClassifier)
-
-from sklearn.discriminant_analysis import (LinearDiscriminantAnalysis, QuadraticDiscriminantAnalysis)
-
-from sklearn.svm import (LinearSVC, NuSVC, SVC)
-from sklearn.neighbors import (KNeighborsClassifier, RadiusNeighborsClassifier)
-from sklearn.gaussian_process import GaussianProcessClassifier
-from sklearn.naive_bayes import (BernoulliNB, CategoricalNB, GaussianNB)
-from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
+from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import (GradientBoostingClassifier, RandomForestClassifier, 
-                              AdaBoostClassifier, BaggingClassifier, ExtraTreesClassifier,
-                              HistGradientBoostingClassifier)
-
-from xgboost import XGBClassifier
-from lightgbm import LGBMClassifier
+                              AdaBoostClassifier, ExtraTreesClassifier)
 
 from sklearn.model_selection import cross_validate
 import numpy as np
@@ -100,102 +88,13 @@ class ClassificationModel(object):
     def apply_exploring(self):
 
         matrix_response = []
-
-        try:
-            clf_model = RidgeClassifier(
-                
-            )
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="Ridge"
-                )
-            )
-        except:
-            pass
-
-        try:
-            clf_model = LogisticRegression(
-                
-            )
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="Logistic"
-                )
-            )
-        except:
-            pass
         
         try:
-            clf_model = SGDClassifier(
-                
-            )
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="SGD"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = LinearDiscriminantAnalysis()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="LDA"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = QuadraticDiscriminantAnalysis()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="QDA"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = LinearSVC(
-                
-            )
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="LinearSVC"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = SVC(
-                
-            )
+            clf_model = SVC()
             matrix_response.append(
                 self.__apply_model(
                     model=clf_model,
                     description="SVC"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = NuSVC(
-                
-            )
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="NuSVC"
                 )
             )
         except:
@@ -207,61 +106,6 @@ class ClassificationModel(object):
                 self.__apply_model(
                     model=clf_model,
                     description="KNN"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = RadiusNeighborsClassifier()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="RNN"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = GaussianProcessClassifier()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="GPC"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = BernoulliNB()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="BernoulliNB"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = CategoricalNB()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="CategoricalNB"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = GaussianNB()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="GaussianNB"
                 )
             )
         except:
@@ -281,19 +125,6 @@ class ClassificationModel(object):
             pass
         
         try:
-            clf_model = ExtraTreeClassifier(
-                
-            )
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="ExtraTree"
-                )
-            )
-        except:
-            pass
-        
-        try:
             clf_model = RandomForestClassifier(
                 
             )
@@ -301,17 +132,6 @@ class ClassificationModel(object):
                 self.__apply_model(
                     model=clf_model,
                     description="RandomForest"
-                )
-            )
-        except:
-            pass
-
-        try:
-            clf_model = BaggingClassifier()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="Bagging"
                 )
             )
         except:
@@ -339,23 +159,9 @@ class ClassificationModel(object):
         except:
             pass
         
-        try:
-            clf_model = HistGradientBoostingClassifier(
-                
-            )
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="HistGradientBoosting"
-                )
-            )
-        except:
-            pass
         
         try:
-            clf_model = ExtraTreesClassifier(
-                
-            )
+            clf_model = ExtraTreesClassifier()
             matrix_response.append(
                 self.__apply_model(
                     model=clf_model,
@@ -365,28 +171,6 @@ class ClassificationModel(object):
         except:
             pass
         
-        try:
-            clf_model = XGBClassifier()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="XGB"
-                )
-            )
-        except:
-            pass
-        
-        try:
-            clf_model = LGBMClassifier()
-            matrix_response.append(
-                self.__apply_model(
-                    model=clf_model,
-                    description="LGBM"
-                )
-            )
-        except:
-            pass
-
         header = ["algorithm", 'fit_time', 'score_time', 'F1_cv', 'recall_cv', 'precision_cv', 'accuracy_cv', 
                   'accuracy_val', 'precision_val', 'recall_val', 'f1_val', 'matthews_corrcoef_val', 'sensitivity', 'specificity']
 
