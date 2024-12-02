@@ -193,13 +193,13 @@ class BioEmbeddings:
     def apply_onehot(self, name_export):
         """Apply OneHotEncodingEmbedder embedder"""
 
-        command = f"mkdir -p {self.path_export}onehot_embedding"
+        command = f"mkdir -p {self.path_export}onehot"
         os.system(command)
 
         response =  self.__apply_model(OneHotEncodingEmbedder)
 
         response[self.column_response] = self.dataset[self.column_response]
-        response.to_csv(f"{self.path_export}onehot_embedding/{name_export}.csv", index=False)
+        response.to_csv(f"{self.path_export}onehot/{name_export}.csv", index=False)
 
     def apply_plusrnn(self, name_export):
         """Apply PLUSRNNEmbedder embedder"""
