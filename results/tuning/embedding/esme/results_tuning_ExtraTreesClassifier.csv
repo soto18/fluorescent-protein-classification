@@ -1,0 +1,2 @@
+params,train_accuracy,train_precision,train_f1,train_recall,test_accuracy,test_precision,test_f1,test_recall,test_mcc,test_cm,overfitting_ratio
+"{'n_estimators': 2930, 'criterion': 'entropy', 'min_samples_split': 19, 'min_samples_leaf': 2, 'max_features': 'sqrt'}",0.8078039927404719,0.8115787841191067,0.8163724887231881,0.8248275862068966,0.8699186991869918,0.8705510388437216,0.8700048229295853,0.8699186991869918,0.7398681986478866,"[[56, 9], [7, 51]]",1.0546673192484433

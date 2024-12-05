@@ -1,0 +1,2 @@
+params,train_accuracy,train_precision,train_f1,train_recall,test_accuracy,test_precision,test_f1,test_recall,test_mcc,test_cm,overfitting_ratio
+"{'n_estimators': 1315, 'learning_rate': 1.3374149479378188, 'algorithm': 'SAMME'}",0.8253478523895946,0.8155977229601519,0.8363798971936649,0.8588505747126437,0.8211382113821138,0.825194639658261,0.8212091507483028,0.8211382113821138,0.6461703606354975,"[[51, 14], [8, 50]]",0.9560897268501592

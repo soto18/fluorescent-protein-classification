@@ -1,20 +1,14 @@
 import warnings
 warnings.filterwarnings("ignore")
 
-from sklearn.metrics import (precision_score, 
-                             recall_score, 
-                             f1_score, 
-                             accuracy_score, 
-                             matthews_corrcoef,
-                             confusion_matrix)
-
+from sklearn.metrics import (precision_score, recall_score, f1_score, accuracy_score, matthews_corrcoef, confusion_matrix)
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import (GradientBoostingClassifier, RandomForestClassifier, 
-                              AdaBoostClassifier, ExtraTreesClassifier)
+from sklearn.ensemble import (GradientBoostingClassifier, RandomForestClassifier, AdaBoostClassifier, ExtraTreesClassifier)
 
 from sklearn.model_selection import cross_validate
+from joblib import dump
 import numpy as np
 import pandas as pd
 
@@ -24,12 +18,14 @@ class ClassificationModel(object):
                  train_values=None, 
                  test_values=None, 
                  train_response=None, 
-                 test_response=None) -> None:
+                 test_response=None,
+                 folder_export=None) -> None:
         
         self.train_values = train_values
         self.test_values = test_values
         self.train_response = train_response
         self.test_response = test_response
+        self.folder_export = folder_export
 
         self.scores = ['f1_weighted', 'recall_weighted', 'precision_weighted', 'accuracy']
         self.keys = ['fit_time', 'score_time', 'test_f1_weighted', 'test_recall_weighted', 'test_precision_weighted', 'test_accuracy']
@@ -97,6 +93,7 @@ class ClassificationModel(object):
                     description="SVC"
                 )
             )
+            dump(clf_model, f"{self.folder_export}/svc.joblib")
         except:
             pass
         
@@ -108,6 +105,7 @@ class ClassificationModel(object):
                     description="KNN"
                 )
             )
+            dump(clf_model, f"{self.folder_export}/knn.joblib")
         except:
             pass
         
@@ -121,6 +119,7 @@ class ClassificationModel(object):
                     description="DecisionTree"
                 )
             )
+            dump(clf_model, f"{self.folder_export}/decisionTree.joblib")
         except:
             pass
         
@@ -134,6 +133,7 @@ class ClassificationModel(object):
                     description="RandomForest"
                 )
             )
+            dump(clf_model, f"{self.folder_export}/randomForest.joblib")
         except:
             pass
         
@@ -145,6 +145,7 @@ class ClassificationModel(object):
                     description="AdaBoost"
                 )
             )
+            dump(clf_model, f"{self.folder_export}/adaBoost.joblib")
         except:
             pass
         
@@ -156,6 +157,7 @@ class ClassificationModel(object):
                     description="GradientBoosting"
                 )
             )
+            dump(clf_model, f"{self.folder_export}/gradientBoosting.joblib")            
         except:
             pass
         
@@ -168,6 +170,7 @@ class ClassificationModel(object):
                     description="ExtraTrees-ensemble"
                 )
             )
+            dump(clf_model, f"{self.folder_export}/extraTrees-ensemble.joblib")                        
         except:
             pass
         

@@ -1,0 +1,2 @@
+params,train_accuracy,train_precision,train_f1,train_recall,test_accuracy,test_precision,test_f1,test_recall,test_mcc,test_cm,overfitting_ratio
+"{'n_neighbors': 3, 'leaf_size': 12, 'algorithm': 'auto', 'metric': 'cityblock'}",0.85329703569268,0.8371590909090909,0.8638489755147608,0.8928735632183908,0.7967479674796748,0.804860713852341,0.7965060807632871,0.7967479674796748,0.6019692853663788,"[[48, 17], [8, 50]]",0.8923413127025194

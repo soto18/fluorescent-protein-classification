@@ -1,0 +1,2 @@
+params,train_accuracy,train_precision,train_f1,train_recall,test_accuracy,test_precision,test_f1,test_recall,test_mcc,test_cm,overfitting_ratio
+"{'probability': True, 'random_state': 42}",0.7450695704779189,0.7728179228179227,0.7382395382395381,0.7245977011494252,0.7317073170731707,0.7315193008389413,0.7315648450211684,0.7317073170731707,0.46123233663892504,"[[49, 16], [17, 41]]",1.0098118113160828

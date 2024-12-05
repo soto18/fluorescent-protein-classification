@@ -1,0 +1,2 @@
+params,train_accuracy,train_precision,train_f1,train_recall,test_accuracy,test_precision,test_f1,test_recall,test_mcc,test_cm,overfitting_ratio
+"{'n_neighbors': 3, 'leaf_size': 22, 'algorithm': 'kd_tree', 'metric': 'euclidean'}",0.8426497277676951,0.8581942163838715,0.847680824201867,0.839080459770115,0.7317073170731707,0.7344818686282102,0.7318847006651884,0.7317073170731707,0.4656957727257374,"[[46, 19], [14, 44]]",0.8720347477447377

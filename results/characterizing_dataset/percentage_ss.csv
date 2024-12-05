@@ -1,0 +1,43 @@
+label,structure_type,column,proportion
+0,C,secondary structure element (ss3),0.5151230749541402
+0,E,secondary structure element (ss3),0.39893775862804487
+0,H,secondary structure element (ss3),0.08593916641781493
+1,C,secondary structure element (ss3),0.5148645628009998
+1,E,secondary structure element (ss3),0.40627095568064053
+1,H,secondary structure element (ss3),0.07886448151835972
+0,L,secondary structure element (ss8),0.23653001151827993
+0,E,secondary structure element (ss8),0.5226952775052259
+0,T,secondary structure element (ss8),0.09950514056567553
+0,H,secondary structure element (ss8),0.11477752655603429
+0,S,secondary structure element (ss8),0.02322853120600657
+0,G,secondary structure element (ss8),0.0032635126487777825
+1,L,secondary structure element (ss8),0.2277336367885229
+1,E,secondary structure element (ss8),0.5322184064538417
+1,T,secondary structure element (ss8),0.10111560423482555
+1,S,secondary structure element (ss8),0.024892808518420677
+1,G,secondary structure element (ss8),0.005364654243969844
+1,H,secondary structure element (ss8),0.10867488976041942
+0,E,solvent accessibility,0.3992150505524508
+0,B,solvent accessibility,0.33712298963354803
+0,M,solvent accessibility,0.2636619598140011
+1,E,solvent accessibility,0.41151368596452015
+1,M,solvent accessibility,0.24957834630468798
+1,B,solvent accessibility,0.3389079677307919
+0,*,order/disorder prediction,0.056162279766221575
+0,.,order/disorder prediction,0.9438377202337784
+1,*,order/disorder prediction,0.06614374834894637
+1,.,order/disorder prediction,0.9338562516510537
+0,_,transMembrane topology (tm2),0.9845356426773602
+0,B,transMembrane topology (tm2),0.01424853888485986
+0,H,transMembrane topology (tm2),0.0012158184377799581
+1,_,transMembrane topology (tm2),0.98632419580988
+1,H,transMembrane topology (tm2),0.006258763284631485
+1,B,transMembrane topology (tm2),0.00741704090548861
+0,X,transMembrane topology (tm8),0.14850049059340473
+0,_,transMembrane topology (tm8),0.8142570709440724
+0,E,transMembrane topology (tm8),0.03391493536965146
+0,H,transMembrane topology (tm8),0.0033275030928714647
+1,X,transMembrane topology (tm8),0.15516855987482472
+1,_,transMembrane topology (tm8),0.8096360569791307
+1,E,transMembrane topology (tm8),0.024019020137774075
+1,H,transMembrane topology (tm8),0.01117636300827051

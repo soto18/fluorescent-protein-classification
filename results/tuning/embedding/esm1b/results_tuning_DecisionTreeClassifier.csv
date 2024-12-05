@@ -1,0 +1,2 @@
+params,train_accuracy,train_precision,train_f1,train_recall,test_accuracy,test_precision,test_f1,test_recall,test_mcc,test_cm,overfitting_ratio
+"{'criterion': 'log_loss', 'splitter': 'random', 'min_weight_fraction_leaf': 0.35376441958574234, 'max_depth': 41, 'min_impurity_decrease': 11.500598628789705, 'max_leaf_nodes': 183}",0.5209921355111917,0.5209921355111917,0.6850404607421448,1.0,0.4715447154471545,0.2223544186661379,0.30220545299375645,0.4715447154471545,0.0,"[[0, 65], [0, 58]]",0.4715447154471545

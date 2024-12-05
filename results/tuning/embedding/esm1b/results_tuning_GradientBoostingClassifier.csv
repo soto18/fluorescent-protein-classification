@@ -1,0 +1,2 @@
+params,train_accuracy,train_precision,train_f1,train_recall,test_accuracy,test_precision,test_f1,test_recall,test_mcc,test_cm,overfitting_ratio
+"{'loss': 'exponential', 'learning_rate': 0.2437035450540163, 'n_estimators': 2701, 'criterion': 'friedman_mse', 'min_samples_split': 49, 'min_samples_leaf': 5, 'max_depth': 9, 'max_features': 'sqrt', 'n_iter_no_change': 4}",0.8286751361161524,0.824454898446834,0.8373120797763844,0.8517241379310345,0.8048780487804879,0.80886988424969,0.8049554371799668,0.8048780487804879,0.6135702973220577,"[[50, 15], [9, 49]]",0.9449985188110991
